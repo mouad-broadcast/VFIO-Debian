@@ -47,7 +47,7 @@ reboot
 ```
 lspci -nnk  | grep --color -i -C 3 vfio 
 ```
-## ++ qeum snapshot
+## ++ qemu snapshot
 
 #Create a snapshot:
 ```
