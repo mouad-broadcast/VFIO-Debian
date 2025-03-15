@@ -43,4 +43,6 @@ reboot
 ```
 
 ## 5 )  check 
+```
 lspci -nnk  | grep --color -i -C 3 vfio 
+```
