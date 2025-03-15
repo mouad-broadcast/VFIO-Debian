@@ -15,7 +15,7 @@ GRUB_CMDLINE_LINUX_DEFAULT="quiet intel_iommu=on iommu=pt"
 update-grub
 reboot
 ```
-# check after the reboot if iommu is enabled: 
+####  check after the reboot if iommu is enabled: 
 ```
 dmesg | grep -e DMAR -e IOMMU
 ```
