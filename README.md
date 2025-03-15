@@ -51,19 +51,19 @@ lspci -nnk  | grep --color -i -C 3 vfio
 ```
 ## 6 )  qemu snapshot
 
-# Create a snapshot:
+#### Create a snapshot:
 ```
 qemu-img snapshot -c <snap-name> <file>.qcow2
 ```
-# List snapshots:
+#### List snapshots:
 ```
 qemu-img snapshot -l <file>.qcow2
 ```
-# Revert to a snapshot:
+#### Revert to a snapshot:
 ```
 qemu-img snapshot -a <snap-name> <file>.qcow2
 ```
-# Delete a snapshot:
+#### Delete a snapshot:
 ```
 qemu-img snapshot -d <snap-name> <file>.qcow2
 ```
