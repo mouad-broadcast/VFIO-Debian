@@ -1,4 +1,4 @@
-# VFIO-Debian
+# VFIO-Debian 12 (bookworm)
 VFIO GPU Passthrough IOMMU 
 
 ## 1 ) Get the IDS
@@ -43,6 +43,25 @@ reboot
 ```
 
 ## 5 )  check 
+
 ```
 lspci -nnk  | grep --color -i -C 3 vfio 
+```
+## ++ qeum snapshot
+
+#Create a snapshot:
+```
+qemu-img snapshot -c <snap-name> <file>.qcow2
+```
+#List snapshots:
+```
+qemu-img snapshot -l <file>.qcow2
+```
+#Revert to a snapshot:
+```
+qemu-img snapshot -a <snap-name> <file>.qcow2
+```
+#Delete a snapshot:
+```
+qemu-img snapshot -d <snap-name> <file>.qcow2
 ```
